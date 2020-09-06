@@ -17,8 +17,8 @@ import React from "react";
 const App = () => {
   return (
     <div>
-      <Cat />
-      <Cat />
+      <cat />
+      <cat />
     </div>
   );
 };

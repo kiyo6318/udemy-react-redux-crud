@@ -17,14 +17,14 @@ import React from "react";
 const App = () => {
   return (
     <div>
-      <Cat />
-      <Cat />
+      <cat />
+      <cat />
     </div>
   );
 };
 
 const Cat = () => {
-  return <div>ニャー</div>;
+  return <div>aaa</div>;
 };
 
 export default App;
