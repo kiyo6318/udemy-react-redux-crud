@@ -2,9 +2,9 @@ import React from "react";
 
 function App() {
   return (
-    <React.Fragment>
+    <div>
       <label htmlFor="bar">bar</label>
-    </React.Fragment>
+    </div>
     // <input
     //   type="text"
     //   onChange={() => {
