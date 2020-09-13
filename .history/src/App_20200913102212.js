@@ -30,8 +30,7 @@ const App = () => {
       age: 67,
     },
     {
-      name: "Jon Doe",
-      age: 100,
+      name: 1,
     },
   ];
   return (
@@ -53,7 +52,6 @@ const User = (props) => {
 
 User.propTypes = {
   name: PropTypes.string,
-  age: PropTypes.number.isRequired,
 };
 
 export default App;

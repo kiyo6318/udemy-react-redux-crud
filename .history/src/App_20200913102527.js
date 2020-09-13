@@ -31,7 +31,6 @@ const App = () => {
     },
     {
       name: "Jon Doe",
-      age: 100,
     },
   ];
   return (
