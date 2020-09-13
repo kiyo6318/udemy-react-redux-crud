@@ -28,14 +28,11 @@ const App = () => {
       name: "Takahiko",
       age: 67,
     },
-    {
-      name: "Jon Doe",
-    },
   ];
   return (
     <div>
-      {profiles.map((profile, index) => {
-        return <User name={profile.name} age={profile.age} key={index} />;
+      {profiles.map((profile) => {
+        return <User name={profile.name} age={profile.age} />;
       })}
     </div>
   );
@@ -47,10 +44,6 @@ const User = (props) => {
       I am {props.name}, and {props.age} years old!
     </div>
   );
-};
-
-User.defaultProps = {
-  age: 1,
 };
 
 export default App;

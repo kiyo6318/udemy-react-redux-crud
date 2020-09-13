@@ -28,9 +28,6 @@ const App = () => {
       name: "Takahiko",
       age: 67,
     },
-    {
-      name: "Jon Doe",
-    },
   ];
   return (
     <div>

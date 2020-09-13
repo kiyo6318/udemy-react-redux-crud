@@ -28,9 +28,6 @@ const App = () => {
       name: "Takahiko",
       age: 67,
     },
-    {
-      name: "Jon Doe",
-    },
   ];
   return (
     <div>
@@ -47,10 +44,6 @@ const User = (props) => {
       I am {props.name}, and {props.age} years old!
     </div>
   );
-};
-
-User.defaultProps = {
-  age: 1,
 };
 
 export default App;

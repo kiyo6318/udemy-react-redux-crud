@@ -15,28 +15,9 @@ import React from "react";
 // }
 
 const App = () => {
-  const profiles = [
-    {
-      name: "Kiyo",
-      age: 26,
-    },
-    {
-      name: "Kimiko",
-      age: 65,
-    },
-    {
-      name: "Takahiko",
-      age: 67,
-    },
-    {
-      name: "Jon Doe",
-    },
-  ];
   return (
     <div>
-      {profiles.map((profile, index) => {
-        return <User name={profile.name} age={profile.age} key={index} />;
-      })}
+      <User name={"Kiyo"} age={26} />
     </div>
   );
 };
@@ -47,10 +28,6 @@ const User = (props) => {
       I am {props.name}, and {props.age} years old!
     </div>
   );
-};
-
-User.defaultProps = {
-  age: 1,
 };
 
 export default App;
