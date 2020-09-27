@@ -8,7 +8,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./index.css";
 import reducer from "./reducers";
 import EventsIndex from "./components/events_index";
-import EventsNew from "./components/events_new";
 import * as serviceWorker from "./serviceWorker";
 
 const store = createStore(reducer, applyMiddleware(thunk));
@@ -21,6 +20,7 @@ ReactDOM.render(
         <Route exact path="/" component={EventsIndex} />
       </Switch>
     </BrowserRouter>
+    <EventsIndex />
   </Provider>,
   document.getElementById("root")
 );
