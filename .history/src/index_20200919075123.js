@@ -1,19 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { createStore, applyMiddleware } from "redux";
+import { createStore } from "redux";
 import { Provider } from "react-redux";
-import thunk from "redux-thunk";
 
 import "./index.css";
 import reducer from "./reducers";
-import EventsIndex from "./components/events_index";
+import EventsIndex from "./components/EventsIndex";
 import * as serviceWorker from "./serviceWorker";
 
-const store = createStore(reducer, applyMiddleware(thunk));
+const store = createStore(reducer);
 
 ReactDOM.render(
   <Provider store={store}>
-    <EventsIndex />
+    <App />
   </Provider>,
   document.getElementById("root")
 );
