@@ -69,5 +69,5 @@ const validate = (values) => {
 
 export default connect(
   null,
-  mapDispatchToProps
+  postEvents
 )(reduxForm({ validate, form: "eventNewForm" })(EventsNew));

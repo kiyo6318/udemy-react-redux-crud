@@ -25,7 +25,7 @@ class EventsNew extends Component {
   }
 
   async onSubmit(values) {
-    await this.props.postEvents(values);
+    await this.props.postEvent(values);
     this.props.history.push("/");
   }
 
@@ -58,7 +58,7 @@ class EventsNew extends Component {
   }
 }
 
-const mapDispatchToProps = { postEvents };
+// const mapDispatchToProps = { postEvents };
 
 const validate = (values) => {
   const errors = {};
@@ -69,5 +69,5 @@ const validate = (values) => {
 
 export default connect(
   null,
-  mapDispatchToProps
+  null
 )(reduxForm({ validate, form: "eventNewForm" })(EventsNew));
